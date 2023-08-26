@@ -37,8 +37,8 @@ export default function Main(props) {
 			<div className="main">
 				<form onClick={handleSubmit}>
 					<input type="text" placeholder="Change City" onChange={updateCity} />
-					<input button="submit" value="Go" />
-					<input button="submit" value="Current" />
+					<input type="submit" value="Go" />
+					<input type="submit" value="Current" />
 				</form>
 				<h1>{city}</h1>
 				<div className="row">
