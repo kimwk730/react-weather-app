@@ -1,13 +1,13 @@
 import React from "react";
-import Form from "./Form";
+import Main from "./Main";
 import Footer from "./Footer";
+
 import "./App.css";
 
 export default function App() {
 	return (
-		<div className="App">
-			<h1>Weather Search Engine</h1>
-			<Form />
+		<div className="App container">
+			<Main defaultCity="London" />
 			<Footer />
 		</div>
 	);
