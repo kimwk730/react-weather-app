@@ -32,16 +32,16 @@ export default function Main(props) {
 			wind: Math.round(response.data.wind.speed),
 			coordinates: response.data.coord,
 			date: new Date(response.data.dt * 1000),
-			icon: response.data.weather[0].icon,
+			icon: response.data.weather[0].id,
 		});
 	}
 	if (weatherData.ready) {
 		return (
 			<div className="main">
+				<input type="button" value="current location" />
 				<form onClick={handleSubmit}>
-					<input button="submit" value="current location" />
 					<input type="text" placeholder="Change City" onChange={updateCity} />
-					<input button="submit" value="Search" />
+					<input type="submit" value="Search" />
 				</form>
 				<WeatherInfo data={weatherData} />
 			</div>

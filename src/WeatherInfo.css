@@ -1,0 +1,12 @@
+.weatherInfo h1,
+.weatherInfo h2 {
+	text-shadow: 2px 2px white;
+}
+
+.weatherInfo .mainIcon {
+	width: 100px;
+	border-radius: 50%;
+}
+.weatherInfo ul {
+	list-style-type: none;
+}
