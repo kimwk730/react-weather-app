@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import WeatherInfo from "./WeatherInfo";
-
 import axios from "axios";
+import "./Main.css";
 
 export default function Main(props) {
 	const [city, setCity] = useState(props.defaultCity);

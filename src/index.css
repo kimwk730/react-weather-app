@@ -1,4 +1,8 @@
+@import url("https://fonts.googleapis.com/css2?family=Nova+Flat&display=swap");
+
 body {
 	background: url(./images/bg-cloud.jpg) no-repeat center center fixed;
 	background-size: cover;
+	text-align: center;
+	font-family: "Nova Flat", cursive;
 }

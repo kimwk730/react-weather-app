@@ -1,0 +1,7 @@
+.main {
+	margin: 8% auto 3% auto;
+	padding: 40px 20px 20px 20px;
+	display: block;
+	max-width: 800px;
+	background-color: rgb(0, 204, 203, 0.2);
+}
