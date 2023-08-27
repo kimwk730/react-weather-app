@@ -2,6 +2,10 @@ import React, { useState } from "react";
 import WeatherInfo from "./WeatherInfo";
 import Forecast from "./Forecast";
 import axios from "axios";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faLocationDot } from "@fortawesome/free-solid-svg-icons";
+import { faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
+
 import "./Main.css";
 
 export default function Main(props) {
@@ -39,11 +43,23 @@ export default function Main(props) {
 	if (weatherData.ready) {
 		return (
 			<div className="main">
-				<input type="button" value="current location" />
+				<input type="button" value="Current Location" />
 				<form onClick={handleSubmit}>
 					<input type="text" placeholder="Change City" onChange={updateCity} />
 					<input type="submit" value="Search" />
 				</form>
+				<FontAwesomeIcon
+					icon={faLocationDot}
+					bounce
+					size="lg"
+					style={{ color: "#00cccb" }}
+				/>
+				<FontAwesomeIcon
+					icon={faMagnifyingGlass}
+					shake
+					size="xl"
+					style={{ color: "#00cccb" }}
+				/>
 				<WeatherInfo data={weatherData} />
 				<Forecast />
 			</div>

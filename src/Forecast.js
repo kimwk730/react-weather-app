@@ -7,7 +7,7 @@ export default function Forecast() {
 				<div>Mon</div>
 				<div>icon</div>
 				<span>MaxTemp°C</span>
-				<sapn>MinTemp°C</sapn>
+				<span>MinTemp°C</span>
 			</div>
 		</div>
 	);
