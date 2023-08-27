@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import WeatherInfo from "./WeatherInfo";
+import Forecast from "./Forecast";
 import axios from "axios";
 import "./Main.css";
 
@@ -44,6 +45,7 @@ export default function Main(props) {
 					<input type="submit" value="Search" />
 				</form>
 				<WeatherInfo data={weatherData} />
+				<Forecast />
 			</div>
 		);
 	} else {
