@@ -2,11 +2,20 @@
 .weatherInfo h2 {
 	text-shadow: 2px 2px white;
 }
-
-.weatherInfo .mainIcon {
-	width: 100px;
-	border-radius: 50%;
+.weatherInfo h1 {
+	font-size: 60px;
 }
+.weatherInfo h2 {
+	font-size: 40px;
+}
+.weatherInfo .mainIcon {
+	display: inline-block;
+	width: 100px;
+	border: 3px solid rgb(0, 204, 203, 0.2);
+	border-radius: 50%;
+	box-shadow: 8px 8px 10px rgba(0, 0, 0, 0.2);
+}
+
 .weatherInfo ul {
 	list-style-type: none;
 }
