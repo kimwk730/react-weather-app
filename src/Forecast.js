@@ -9,7 +9,7 @@ export default function Forecast(props) {
 
 	useEffect(() => {
 		setLoaded(false);
-	}, [props.coordinated]);
+	}, [props.coordinates]);
 
 	function handleResponse(response) {
 		setForecast(response.data.daily);
@@ -26,6 +26,8 @@ export default function Forecast(props) {
 								<ForecastDay data={dailyForecast} />
 							</div>
 						);
+					} else {
+						return null;
 					}
 				})}
 			</div>
