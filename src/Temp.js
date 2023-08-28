@@ -2,27 +2,39 @@ import React, { useState } from "react";
 
 export default function Temp(props) {
 	const [temp, setTemp] = useState(props.celsius);
-	const [unit, setUnit] = useState("°C");
+	const [unit, setUnit] = useState("celsius");
 
-	function handleClick(e) {
+	function convertToFah(e) {
 		e.preventDefault();
-		setUnit("°F");
 		setTemp(Math.round((props.celsius * 9) / 5 + 32));
+		setUnit("fahrenheit");
+	}
+	function convertToCel(e) {
+		e.preventDefault();
+		setUnit("celsius");
 	}
 
-	// if ({ unit } === "°C") setUnit("°F");
-	// setTemp(Math.round((props.celsius * 9) / 5 + 32));
-	// if ({ unit } === "°F") setUnit("°C");
-	// setTemp(props.celsius);
-
-	return (
-		<h2>
-			{temp}
-			<small>
-				<a href="/#" class="text-decoration-none" onClick={handleClick}>
-					{unit}
-				</a>
-			</small>
-		</h2>
-	);
+	if (unit === "celsius") {
+		return (
+			<h2>
+				{props.celsius}
+				<small>
+					<a href="/" class="text-decoration-none" onClick={convertToFah}>
+						°C
+					</a>
+				</small>
+			</h2>
+		);
+	} else {
+		return (
+			<h2>
+				{temp}
+				<small>
+					<a href="/" class="text-decoration-none" onClick={convertToCel}>
+						°F
+					</a>
+				</small>
+			</h2>
+		);
+	}
 }
