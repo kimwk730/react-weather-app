@@ -12,20 +12,20 @@ export default function Icon(props) {
 	const weatherId = props.weatherId;
 
 	if (weatherId === 800) {
-		return <img src={sun} alt="sun" className="mainIcon" />;
+		return <img src={sun} alt="sun" className="weatherIcon" />;
 	} else if (weatherId === 801 || weatherId === 802) {
-		return <img src={partlycoudy} alt="partlycloudy" className="mainIcon" />;
+		return <img src={partlycoudy} alt="partlycloudy" className="weatherIcon" />;
 	} else if (weatherId === 803 || weatherId === 804) {
-		return <img src={cloudy} alt="cloudy" className="mainIcon" />;
+		return <img src={cloudy} alt="cloudy" className="weatherIcon" />;
 	} else if (weatherId >= 700 && weatherId < 799) {
-		return <img src={foggy} alt="foggy" className="mainIcon" />;
+		return <img src={foggy} alt="foggy" className="weatherIcon" />;
 	} else if (weatherId >= 600 && weatherId < 699) {
-		return <img src={snow} alt="snow" className="mainIcon" />;
+		return <img src={snow} alt="snow" className="weatherIcon" />;
 	} else if (weatherId >= 200 && weatherId < 299) {
-		return <img src={storm} alt="storm" className="mainIcon" />;
+		return <img src={storm} alt="storm" className="weatherIcon" />;
 	} else if (weatherId >= 300 && weatherId < 399) {
-		return <img src={drizzle} alt="drizzle " className="mainIcon" />;
+		return <img src={drizzle} alt="drizzle " className="weatherIcon" />;
 	} else if (weatherId >= 500 && weatherId < 599) {
-		return <img src={rain} alt="rain" className="mainIcon" />;
+		return <img src={rain} alt="rain" className="weatherIcon" />;
 	}
 }

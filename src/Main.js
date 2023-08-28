@@ -35,9 +35,9 @@ export default function Main(props) {
 			description: response.data.weather[0].description,
 			humidity: response.data.main.humidity,
 			wind: Math.round(response.data.wind.speed),
+			icon: response.data.weather[0].id,
 			coordinates: response.data.coord,
 			date: new Date(response.data.dt * 1000),
-			icon: response.data.weather[0].id,
 		});
 	}
 	if (weatherData.ready) {
@@ -61,7 +61,7 @@ export default function Main(props) {
 					style={{ color: "#00cccb" }}
 				/>
 				<WeatherInfo data={weatherData} />
-				<Forecast />
+				<Forecast coordinates={weatherData.coordinates} />
 			</div>
 		);
 	} else {

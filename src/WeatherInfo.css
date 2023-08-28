@@ -8,7 +8,7 @@
 .weatherInfo h2 {
 	font-size: 40px;
 }
-.weatherInfo .mainIcon {
+.weatherInfo .weatherIcon {
 	display: inline-block;
 	width: 100px;
 	border: 3px solid rgb(0, 204, 203, 0.2);
