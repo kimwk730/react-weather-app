@@ -9,7 +9,7 @@ export default function WeatherInfo(props) {
 		<div className="weatherInfo">
 			<h1>{props.data.city}</h1>
 			<div className="row">
-				<div className="col">
+				<div className="col-sm align-self-center">
 					<ul>
 						<li class="text-capitalize">{props.data.description}</li>
 						<li>Humidity: {props.data.humidity}%</li>
@@ -19,10 +19,10 @@ export default function WeatherInfo(props) {
 						</li>
 					</ul>
 				</div>
-				<div className="col">
+				<div className="col-sm">
 					<Icon weatherId={props.data.icon} />
 				</div>
-				<div className="col">
+				<div className="col-sm">
 					<Temp celsius={props.data.temp} />
 				</div>
 			</div>
