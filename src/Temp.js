@@ -19,7 +19,7 @@ export default function Temp(props) {
 		<h2>
 			{temp}
 			<small>
-				<a href="/#" onClick={handleClick}>
+				<a href="/#" class="text-decoration-none" onClick={handleClick}>
 					{unit}
 				</a>
 			</small>

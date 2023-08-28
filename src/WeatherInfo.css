@@ -1,11 +1,28 @@
+.weatherInfo {
+	padding: 20px;
+}
 .weatherInfo h1,
 .weatherInfo h2 {
 	text-shadow: 2px 2px white;
 }
 .weatherInfo h1 {
-	font-size: 60px;
+	font-size: 80px;
+	text-align: left;
 }
+.weatherInfo .row {
+	margin: 40px auto;
+}
+.weatherInfo ul {
+	list-style-type: none;
+	text-align: left;
+}
+
 .weatherInfo h2 {
+	font-size: 100px;
+}
+.weatherInfo a {
+	text-decoration: none;
+	color: black;
 	font-size: 40px;
 }
 .weatherInfo .weatherIcon {
@@ -14,8 +31,4 @@
 	border: 3px solid rgb(0, 204, 203, 0.2);
 	border-radius: 50%;
 	box-shadow: 8px 8px 10px rgba(0, 0, 0, 0.2);
-}
-
-.weatherInfo ul {
-	list-style-type: none;
 }
