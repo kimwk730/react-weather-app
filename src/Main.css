@@ -21,3 +21,13 @@
 	padding: 4px 12px;
 	background-color: white;
 }
+@media only screen and (max-width: 760px) {
+	.main form {
+		padding: 30px;
+	}
+}
+@media only screen and (max-width: 400px) {
+	.main button {
+		display: none;
+	}
+}
